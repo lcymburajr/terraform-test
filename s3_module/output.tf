@@ -1,7 +1,4 @@
-output "s3_bucket_name" {
-  value = aws_s3_bucket.b.id
-}
-
-output "terraform_state" {
-  value = aws_s3_bucket.terraform-state.bucket
+output "name" {
+  description = "Name (id) of the bucket"
+  value       = aws_s3_bucket.s3_bucket.id
 }
